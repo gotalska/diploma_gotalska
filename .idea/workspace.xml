@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MyAccountPage.java" afterDir="false" />
+    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="дипломный проект очередные правки ЧЕРТОВА КНОПКА ВРОДЕ БЫ РАБОТАЕТ ТЕПЕРЬ">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +39,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "reference.idesettings.debugger.capture"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -54,7 +47,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.randomUserNameAndPassword">
+  <component name="RunManager" selected="TestNG.LoginTest.correctUserShouldBeLoggedIn">
     <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Diploma_Gotalskaia" />
       <extension name="coverage">
@@ -108,6 +101,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.emptyUserName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Diploma_Gotalskaia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="emptyUserName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTest.randomUserNameAndPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Diploma_Gotalskaia" />
       <extension name="coverage">
@@ -128,9 +139,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.randomUserNameAndPassword" />
-        <item itemvalue="TestNG.LoginTest.emptyPassword" />
         <item itemvalue="TestNG.LoginTest.correctUserShouldBeLoggedIn" />
+        <item itemvalue="TestNG.LoginTest.emptyPassword" />
+        <item itemvalue="TestNG.LoginTest.emptyUserName" />
+        <item itemvalue="TestNG.LoginTest.randomUserNameAndPassword" />
         <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
@@ -144,6 +156,49 @@
       <option name="presentableId" value="Default" />
       <updated>1661263325013</updated>
     </task>
+    <task id="LOCAL-00001" summary="дипломный проект">
+      <created>1661443505670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661443505671</updated>
+    </task>
+    <task id="LOCAL-00002" summary="дипломный проект">
+      <created>1661448399655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661448399655</updated>
+    </task>
+    <task id="LOCAL-00003" summary="дипломный проект очередные правки">
+      <created>1661450889069</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661450889069</updated>
+    </task>
+    <task id="LOCAL-00004" summary="дипломный проект очередные правки">
+      <created>1661451503489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661451503489</updated>
+    </task>
+    <task id="LOCAL-00005" summary="дипломный проект очередные правки ЧЕРТОВА КНОПКА ВРОДЕ БЫ РАБОТАЕТ ТЕПЕРЬ">
+      <created>1661452278572</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661452278572</updated>
+    </task>
+    <task id="LOCAL-00006" summary="дипломный проект очередные правки ЧЕРТОВА КНОПКА ВРОДЕ БЫ РАБОТАЕТ ТЕПЕРЬ">
+      <created>1661454062754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661454062754</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,5 +211,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="дипломный проект" />
+    <MESSAGE value="дипломный проект очередные правки" />
+    <MESSAGE value="дипломный проект очередные правки ЧЕРТОВА КНОПКА ВРОДЕ БЫ РАБОТАЕТ ТЕПЕРЬ" />
+    <option name="LAST_COMMIT_MESSAGE" value="дипломный проект очередные правки ЧЕРТОВА КНОПКА ВРОДЕ БЫ РАБОТАЕТ ТЕПЕРЬ" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
