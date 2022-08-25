@@ -34,7 +34,6 @@ public class LoginPage extends MainPage {
 
     @Step("Login by user '{user}' with password '{password}'")
     public LoginPage login(String user, String password) {
-        driver.get(startUrl + "authentication");
         wait.until(ExpectedConditions.visibilityOfElementLocated(USER_NAME));
         driver.findElement(USER_NAME).sendKeys(user);
         driver.findElement(PASSWORD).sendKeys(password);
