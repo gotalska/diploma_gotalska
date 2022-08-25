@@ -60,8 +60,8 @@ public class BaseTest {
         loginPage = new LoginPage(driver);
         loginSteps = new LoginSteps(driver);
 
-        user = System.getProperty("tiamat136@gmail.com", PropertyReader.getProperty("user"));
-        password = System.getProperty("123456", PropertyReader.getProperty("password"));
+        user = System.getProperty("user", PropertyReader.getProperty("tiamat136@gmail.com"));
+        password = System.getProperty("password", PropertyReader.getProperty("123456"));
     }
 
     @AfterMethod(alwaysRun = true)
