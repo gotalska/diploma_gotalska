@@ -2,11 +2,11 @@ package tests;
 
 import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
+import pages.MainPage;
 import pages.MyAccountPage;
 
 import java.util.Random;
 import static org.testng.Assert.*;
-import static pages.MyAccountPage.*;
 
 @Log4j2
 public class LoginTest extends BaseTest {

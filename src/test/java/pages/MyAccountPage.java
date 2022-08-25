@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 @Log4j2
 public class MyAccountPage extends MainPage {
-    public final By USER_TITLE = By.xpath("//*[@id=\"center_column\"]/h1");
+    public static final By USER_TITLE = By.xpath("//*[@id=\"center_column\"]/h1");
 
     public MyAccountPage(WebDriver driver) {
         super(driver);
@@ -20,7 +20,7 @@ public class MyAccountPage extends MainPage {
         return waitForElement(USER_TITLE);
     }
 
-    @Step("Opening my account")
+    @Step("Open my account")
     public void openMyAccount() {
         driver.get(startUrl + "my-account");
         PageFactory.initElements(driver, this);
