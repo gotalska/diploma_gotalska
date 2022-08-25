@@ -24,8 +24,8 @@ public class BaseTest {
     WebDriver driver;
     LoginPage loginPage;
     LoginSteps loginSteps;
-    String user;
-    String password;
+    String user = System.getProperty("user", PropertyReader.getProperty("tiamat136@gmail.com"));
+    String password = System.getProperty("password", PropertyReader.getProperty("123456"));
 
     @Parameters({"browser"})
     @BeforeMethod
