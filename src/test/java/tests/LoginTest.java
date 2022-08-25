@@ -21,7 +21,7 @@ public class LoginTest extends BaseTest {
     public void emptyPassword() {
 
         loginPage.openPage();
-        loginPage.login(user, " ");
+        loginPage.login(user, "");
         assertEquals(loginPage.getPasswordError(), "Password is required.");
 
     }

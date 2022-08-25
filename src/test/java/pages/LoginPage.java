@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class LoginPage extends MainPage {
     public static final By USER_NAME = By.id("email");
     public static final By PASSWORD = By.id("passwd");
-    public static final By LOGIN_BUTTON = By.cssSelector("input[id='SubmitLogin']");
+    public static final By LOGIN_BUTTON = By.xpath("//*[@id=\"login_form\"]/div/p");
     public static final By ERROR_NAME_MESSAGE = By.xpath("//p[text()='An email address required.']");
     public static final By ERROR_PASSWORD_MESSAGE = By.xpath("//p[text()='Password is required.']");
 
