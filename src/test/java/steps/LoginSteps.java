@@ -14,8 +14,7 @@ public class LoginSteps {
         loginPage = new LoginPage(driver);
     }
 
-
-    @Step("Log in with: user 'tiamat136@gmail.com', password '123456'")
+    @Step("Log in with: user and password")
     public void login(String user, String password) {
         loginPage.openPage();
         assertTrue(loginPage.isPageOpened(), "Smth went wrong");

@@ -14,15 +14,14 @@ public class LoginTest extends BaseTest {
     @Test(description = "Positive login with correct user data")
     public void correctUserShouldBeLoggedIn() {
         loginSteps.login(user, password);
-        assertTrue(MyAccountPage.isPageOpened(), "smth went wrong");
-
+        assertTrue(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
     }
 
     @Test(description = "password is empty")
     public void emptyPassword() {
 
         loginPage.openPage();
-        loginPage.login(user, "");
+        loginPage.login(user, " ");
         assertEquals(loginPage.getPasswordError(), "Password is required.");
 
     }
@@ -31,7 +30,7 @@ public class LoginTest extends BaseTest {
     public void emptyUserName() {
 
         loginPage.openPage();
-        loginPage.login("", password);
+        loginPage.login(" ", password);
         assertEquals(loginPage.getNameError(), "Username is required.");
     }
 
@@ -42,7 +41,7 @@ public class LoginTest extends BaseTest {
         String password = random.toString();
         loginPage.openPage();
         loginPage.login(name, password);
-        assertFalse(MyAccountPage.isPageOpened(), "smth went wrong");
+        assertFalse(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
     }
 
 
