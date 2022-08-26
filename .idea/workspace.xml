@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="дипломный проект очередные правки ПОЧЕМУ НУЛЛ.">
+    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="ну если поставить вместо ссылок на данные сами данные все работает НО ПОЧЕМУ НЕ РАБОТАЮТ ССЫЛКИ НА ДАННЫЕ? это я проверю завтра.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
+  <component name="RunManager" selected="TestNG.LoginTest.randomUserNameAndPassword">
     <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Diploma_Gotalskaia" />
       <extension name="coverage">
@@ -145,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginTest.randomUserNameAndPassword" />
         <item itemvalue="TestNG.LoginTest.correctUserShouldBeLoggedIn" />
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.LoginTest.emptyPassword" />
         <item itemvalue="TestNG.LoginTest.emptyUserName" />
-        <item itemvalue="TestNG.LoginTest.randomUserNameAndPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661455325333</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ну если поставить вместо ссылок на данные сами данные все работает НО ПОЧЕМУ НЕ РАБОТАЮТ ССЫЛКИ НА ДАННЫЕ? это я проверю завтра.">
+      <created>1661459422641</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661459422641</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +246,8 @@
     <MESSAGE value="дипломный проект очередные правки" />
     <MESSAGE value="дипломный проект очередные правки ЧЕРТОВА КНОПКА ВРОДЕ БЫ РАБОТАЕТ ТЕПЕРЬ" />
     <MESSAGE value="дипломный проект очередные правки ПОЧЕМУ НУЛЛ." />
-    <option name="LAST_COMMIT_MESSAGE" value="дипломный проект очередные правки ПОЧЕМУ НУЛЛ." />
+    <MESSAGE value="ну если поставить вместо ссылок на данные сами данные все работает НО ПОЧЕМУ НЕ РАБОТАЮТ ССЫЛКИ НА ДАННЫЕ? это я проверю завтра." />
+    <option name="LAST_COMMIT_MESSAGE" value="ну если поставить вместо ссылок на данные сами данные все работает НО ПОЧЕМУ НЕ РАБОТАЮТ ССЫЛКИ НА ДАННЫЕ? это я проверю завтра." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
