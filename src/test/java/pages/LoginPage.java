@@ -15,6 +15,7 @@ public class LoginPage extends MainPage {
     public static final By LOGIN_BUTTON = By.xpath("//*[@id=\"login_form\"]/div/p");
     public static final By ERROR_NAME_MESSAGE = By.xpath("//p[text()='An email address required.']");
     public static final By ERROR_PASSWORD_MESSAGE = By.xpath("//p[text()='Password is required.']");
+    public static final By ERROR_NOT_RELEVANT_DATA = By.xpath("//p[text()='Authentication failed.']");
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -50,4 +51,9 @@ public class LoginPage extends MainPage {
     public String getPasswordError() {
         return driver.findElement(ERROR_PASSWORD_MESSAGE).getText();
     }
+
+    public String getNotRelevantDateError() {
+        return driver.findElement(ERROR_NOT_RELEVANT_DATA).getText();
+    }
+
 }

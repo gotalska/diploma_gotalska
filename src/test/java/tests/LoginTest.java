@@ -28,7 +28,6 @@ public class LoginTest extends BaseTest {
 
     @Test(description = "userName is empty")
     public void emptyUserName() {
-
         loginPage.openPage();
         loginPage.login(" ", password);
         assertEquals(loginPage.getNameError(), "Username is required.");
