@@ -17,11 +17,11 @@ public class LoginTest extends BaseTest {
         assertTrue(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
     }
 
-    @Test(description = "password is empty")
+    @Test(description = "Empty password")
     public void emptyPassword() {
 
         loginPage.openPage();
-        loginPage.login(user, "");
+        loginPage.login(user, " ");
         assertEquals(loginPage.getPasswordError(), "Password is required.");
 
     }
@@ -30,7 +30,7 @@ public class LoginTest extends BaseTest {
     public void emptyUserName() {
         loginPage.openPage();
         loginPage.login(" ", password);
-        assertEquals(loginPage.getNameError(), "Username is required.");
+        assertEquals(loginPage.getNameError(), "An email address required.");
     }
 
     @Test(description = "random userName and password")

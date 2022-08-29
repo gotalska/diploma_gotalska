@@ -41,7 +41,6 @@ public class LoginPage extends MainPage {
         driver.findElement(LOGIN_BUTTON).submit();
         return this;
 
-
     }
 
     public String getNameError() {
