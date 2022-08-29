@@ -26,6 +26,9 @@ public class BaseTest {
     LoginSteps loginSteps;
     String user;
     String password;
+    String user1;
+    String password1;
+
 
     @Parameters({"browser"})
     @BeforeMethod
@@ -60,6 +63,9 @@ public class BaseTest {
 
         user = System.getProperty("user", PropertyReader.getProperty("user"));
         password = System.getProperty("password", PropertyReader.getProperty("password"));
+
+        user1 = System.getProperty("user1", PropertyReader.getProperty("user1"));
+        password1 = System.getProperty("password1", PropertyReader.getProperty("password1"));
 
         loginPage = new LoginPage(driver);
         loginSteps = new LoginSteps(driver);

@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class LoginPage extends MainPage {
     public static final By USER_NAME = By.id("email");
     public static final By PASSWORD = By.id("passwd");
-    public static final By LOGIN_BUTTON = By.xpath("//*[@id=\"login_form\"]/div/p");
+    public static final By LOGIN_BUTTON = By.id("SubmitLogin");
     public static final By ERROR_NAME_MESSAGE = By.xpath("//p[text()='An email address required.']");
     public static final By ERROR_PASSWORD_MESSAGE = By.xpath("//p[text()='Password is required.']");
     public static final By ERROR_NOT_RELEVANT_DATA = By.xpath("//p[text()='Authentication failed.']");
@@ -38,7 +38,7 @@ public class LoginPage extends MainPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(USER_NAME));
         driver.findElement(USER_NAME).sendKeys(user);
         driver.findElement(PASSWORD).sendKeys(password);
-        driver.findElement(LOGIN_BUTTON).submit();
+        driver.findElement(LOGIN_BUTTON).click();
         return this;
 
     }

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 @Log4j2
 public class MyAccountPage extends MainPage {
-    public static final By USER_TITLE = By.xpath("//*[@id=\"center_column\"]/h1");
+    public static final By USER_TITLE = By.cssSelector(".logout");
 
     public MyAccountPage(WebDriver driver) {
         super(driver);

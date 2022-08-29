@@ -19,7 +19,5 @@ public class LoginSteps {
         loginPage.openPage();
         assertTrue(loginPage.isPageOpened(), "Smth went wrong");
         loginPage.login(user, password);
-
-
     }
 }

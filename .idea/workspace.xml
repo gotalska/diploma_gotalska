@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="поменяла переменные в basetest">
-      <change afterPath="$PROJECT_DIR$/src/test/resourses/config.properties" afterDir="false" />
+    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="добавила проперти">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MyAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resourses/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resourses/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.randomUserNameAndPassword">
+  <component name="RunManager" selected="TestNG.LoginTest.correctUserShouldBeLoggedIn">
     <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Diploma_Gotalskaia" />
       <extension name="coverage">
@@ -148,9 +150,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.randomUserNameAndPassword" />
         <item itemvalue="TestNG.LoginTest.correctUserShouldBeLoggedIn" />
         <item itemvalue="TestNG.LoginTest.emptyPassword" />
+        <item itemvalue="TestNG.LoginTest.randomUserNameAndPassword" />
         <item itemvalue="TestNG.LoginTest.emptyUserName" />
         <item itemvalue="TestNG.LoginTest" />
       </list>
@@ -235,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661513012655</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="добавила проперти">
+      <created>1661781467223</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661781467223</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +265,8 @@
     <MESSAGE value="дипломный проект очередные правки ПОЧЕМУ НУЛЛ." />
     <MESSAGE value="ну если поставить вместо ссылок на данные сами данные все работает НО ПОЧЕМУ НЕ РАБОТАЮТ ССЫЛКИ НА ДАННЫЕ? это я проверю завтра." />
     <MESSAGE value="поменяла переменные в basetest" />
-    <option name="LAST_COMMIT_MESSAGE" value="поменяла переменные в basetest" />
+    <MESSAGE value="добавила проперти" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила проперти" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
