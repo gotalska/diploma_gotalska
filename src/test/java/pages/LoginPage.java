@@ -13,8 +13,8 @@ public class LoginPage extends MainPage {
     public static final By USER_NAME = By.id("email");
     public static final By PASSWORD = By.id("passwd");
     public static final By LOGIN_BUTTON = By.id("SubmitLogin");
-    public static final By ERROR_NAME_MESSAGE = By.xpath("//p[text()='An email address required.']");
-    public static final By ERROR_PASSWORD_MESSAGE = By.xpath("//p[text()='Password is required.']");
+    public static final By ERROR_NAME_MESSAGE = By.xpath("//li[text()='An email address required.']");
+    public static final By ERROR_PASSWORD_MESSAGE = By.xpath("//li[text()='Password is required.']");
     public static final By ERROR_NOT_RELEVANT_DATA = By.xpath("//p[text()='Authentication failed.']");
 
     public LoginPage(WebDriver driver) {
