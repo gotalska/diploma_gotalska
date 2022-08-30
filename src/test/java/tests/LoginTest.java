@@ -6,6 +6,7 @@ import pages.MainPage;
 import pages.MyAccountPage;
 
 import java.util.Random;
+
 import static org.testng.Assert.*;
 
 @Log4j2
@@ -38,5 +39,21 @@ public class LoginTest extends BaseTest {
         assertFalse(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
     }
 
+    @Test(description = "Wrong password")
+    public void wrongPassword() {
+        loginSteps.login(user, "123");
+        assertEquals(loginPage.getWrongPasswordError(), "Invalid password.");
+    }
 
+    @Test(description = "Wrong name")
+    public void wrongName() {
+        loginSteps.login("tiamat136", password);
+        assertEquals(loginPage.getWrongNameError(), "Invalid email address.");
+    }
+
+    @Test(description = "E-mail without account")
+    public void emailWithoutAccount() {
+        loginSteps.login("tiamat136@yandex.ru", password);
+        assertEquals(loginPage.getNotRelevantDateError(), "Authentication failed.");
+    }
 }

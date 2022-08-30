@@ -20,6 +20,11 @@ public class MyAccountPage extends MainPage {
         return waitForElement(USER_TITLE);
     }
 
+    @Override
+    public boolean isRegisterPageOpened() {
+        return false;
+    }
+
     @Step("Open my account")
     public void openMyAccount() {
         driver.get(startUrl + "my-account");
