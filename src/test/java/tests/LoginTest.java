@@ -4,6 +4,7 @@ import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
 import pages.MainPage;
 import pages.MyAccountPage;
+import pages.RegisterPage;
 
 import java.util.Random;
 
@@ -55,5 +56,11 @@ public class LoginTest extends BaseTest {
     public void emailWithoutAccount() {
         loginSteps.login("tiamat136@yandex.ru", password);
         assertEquals(loginPage.getNotRelevantDateError(), "Authentication failed.");
+    }
+
+    @Test(description = "Positive register with correct user data")
+    public void correctUnregisteredEmail() {
+        loginSteps.register(user1);
+        assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
     }
 }

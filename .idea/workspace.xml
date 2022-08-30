@@ -62,8 +62,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegisterTest.correctUnregisteredEmail">
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LoginTest.correctUnregisteredEmail">
+    <configuration name="LoginTest.correctUnregisteredEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Diploma_Gotalskaia" />
       <extension name="coverage">
         <pattern>
@@ -73,7 +73,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="correctUnregisteredEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -154,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.correctUnregisteredEmail" />
         <item itemvalue="TestNG.RegisterTest.correctUnregisteredEmail" />
         <item itemvalue="TestNG.LoginTest.emailWithoutAccount" />
         <item itemvalue="TestNG.LoginTest.correctUserShouldBeLoggedIn" />
         <item itemvalue="TestNG.RegisterTests.openRegisterPage" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
