@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="добавлены настройки аллюры, добавлены страницы регистрации и переход на страницу регистрации с заполнением данных">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="описана страница регистрации почти полностью, еще требуются дополнения">
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -270,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661878806943</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="описана страница регистрации почти полностью, еще требуются дополнения">
+      <created>1661950803559</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1661950803559</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,7 +299,8 @@
     <MESSAGE value="добавила правильный селектор кнопки логина" />
     <MESSAGE value="правильные селекторы" />
     <MESSAGE value="добавлены настройки аллюры, добавлены страницы регистрации и переход на страницу регистрации с заполнением данных" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены настройки аллюры, добавлены страницы регистрации и переход на страницу регистрации с заполнением данных" />
+    <MESSAGE value="описана страница регистрации почти полностью, еще требуются дополнения" />
+    <option name="LAST_COMMIT_MESSAGE" value="описана страница регистрации почти полностью, еще требуются дополнения" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

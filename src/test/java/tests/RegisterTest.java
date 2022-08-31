@@ -14,9 +14,10 @@ import static org.testng.Assert.*;
 public class RegisterTest extends BaseTest {
 
     @Test(description = "Positive register with correct user data")
-    public void correctUnregisteredEmail() {
+    public void correctUnregisteredData() {
         loginSteps.register(user1);
         assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
+
     }
 
 }
