@@ -23,6 +23,8 @@ public class LoginPage extends MainPage {
     public static final By ERROR_NOT_RELEVANT_PASSWORD = By.xpath("//li[text()='Invalid password.']");
     public static final By ERROR_NOT_RELEVANT_NAME = By.xpath("//li[text()='Invalid email address.']");
 
+    public static final By ERROR_REGISTERED_EMAIL = By.id("create_account_error");
+
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -82,5 +84,9 @@ public class LoginPage extends MainPage {
 
     public String getWrongPasswordError() {
         return driver.findElement(ERROR_NOT_RELEVANT_PASSWORD).getText();
+    }
+
+    public String getRegisteredEmailError() {
+        return driver.findElement(ERROR_REGISTERED_EMAIL).getText();
     }
 }

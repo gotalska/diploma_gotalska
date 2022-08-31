@@ -13,7 +13,7 @@ import static org.testng.Assert.*;
 @Log4j2
 public class RegisterTest extends BaseTest {
 
-    @Test(description = "Positive login with correct user data")
+    @Test(description = "Positive register with correct user data")
     public void correctUnregisteredEmail() {
         loginSteps.register(user1);
         assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");

@@ -21,13 +21,13 @@ public class LoginTest extends BaseTest {
 
     @Test(description = "Empty password")
     public void emptyPassword() {
-        loginSteps.login(user, password1);
+        loginSteps.login(user, "");
         assertEquals(loginPage.getPasswordError(), "Password is required.");
     }
 
     @Test(description = "userName is empty")
     public void emptyUserName() {
-        loginSteps.login(user1, password);
+        loginSteps.login("", password);
         assertEquals(loginPage.getNameError(), "An email address required.");
     }
 
@@ -62,5 +62,17 @@ public class LoginTest extends BaseTest {
     public void correctUnregisteredEmail() {
         loginSteps.register(user1);
         assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
+    }
+
+    @Test(description = "Register with empty field")
+    public void emptyEmail() {
+        loginSteps.register("");
+        assertEquals(loginPage.getWrongNameError(), "Invalid email address.");
+    }
+
+    @Test(description = "Register with email with account")
+    public void RegisteredEmail() {
+        loginSteps.register(user);
+        assertEquals(loginPage.getRegisteredEmailError(), "");
     }
 }
