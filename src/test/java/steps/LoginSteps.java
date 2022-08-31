@@ -19,7 +19,12 @@ public class LoginSteps {
         loginPage.openPage();
         assertTrue(loginPage.isPageOpened(), "Smth went wrong");
         loginPage.login(user, password);
+    }
 
-
+    @Step("register new user")
+    public void register(String user1) {
+        loginPage.openPage();
+        assertTrue(loginPage.isPageOpened(), "Smth went wrong");
+        loginPage.register(user1);
     }
 }

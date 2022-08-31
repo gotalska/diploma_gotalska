@@ -36,4 +36,6 @@ public abstract class MainPage {
         }
         return true;
     }
+
+    public abstract boolean isRegisterPageOpened();
 }

@@ -24,8 +24,11 @@ public class BaseTest {
     WebDriver driver;
     LoginPage loginPage;
     LoginSteps loginSteps;
-    String user = System.getProperty("user", PropertyReader.getProperty("tiamat136@gmail.com"));
-    String password = System.getProperty("password", PropertyReader.getProperty("123456"));
+    String user;
+    String password;
+    String user1;
+    String password1;
+
 
     @Parameters({"browser"})
     @BeforeMethod
@@ -58,8 +61,11 @@ public class BaseTest {
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         }
 
-        user = System.getProperty("user", PropertyReader.getProperty("tiamat136@gmail.com"));
-        password = System.getProperty("password", PropertyReader.getProperty("123456"));
+        user = System.getProperty("user", PropertyReader.getProperty("user"));
+        password = System.getProperty("password", PropertyReader.getProperty("password"));
+
+        user1 = System.getProperty("user1", PropertyReader.getProperty("user1"));
+        password1 = System.getProperty("password1", PropertyReader.getProperty("password1"));
 
         loginPage = new LoginPage(driver);
         loginSteps = new LoginSteps(driver);

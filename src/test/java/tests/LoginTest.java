@@ -4,8 +4,10 @@ import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
 import pages.MainPage;
 import pages.MyAccountPage;
+import pages.RegisterPage;
 
 import java.util.Random;
+
 import static org.testng.Assert.*;
 
 @Log4j2
@@ -17,20 +19,16 @@ public class LoginTest extends BaseTest {
         assertTrue(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
     }
 
-    @Test(description = "password is empty")
+    @Test(description = "Empty password")
     public void emptyPassword() {
-
-        loginPage.openPage();
-        loginPage.login(user, "");
+        loginSteps.login(user, "");
         assertEquals(loginPage.getPasswordError(), "Password is required.");
-
     }
 
     @Test(description = "userName is empty")
     public void emptyUserName() {
-        loginPage.openPage();
-        loginPage.login(" ", password);
-        assertEquals(loginPage.getNameError(), "Username is required.");
+        loginSteps.login("", password);
+        assertEquals(loginPage.getNameError(), "An email address required.");
     }
 
     @Test(description = "random userName and password")
@@ -38,10 +36,43 @@ public class LoginTest extends BaseTest {
         Random random = new Random();
         String name = random.toString();
         String password = random.toString();
-        loginPage.openPage();
-        loginPage.login(name, password);
+        loginSteps.login(name, password);
         assertFalse(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
     }
 
+    @Test(description = "Wrong password")
+    public void wrongPassword() {
+        loginSteps.login(user, "123");
+        assertEquals(loginPage.getWrongPasswordError(), "Invalid password.");
+    }
 
+    @Test(description = "Wrong name")
+    public void wrongName() {
+        loginSteps.login("tiamat136", password);
+        assertEquals(loginPage.getWrongNameError(), "Invalid email address.");
+    }
+
+    @Test(description = "E-mail without account")
+    public void emailWithoutAccount() {
+        loginSteps.login("tiamat136@yandex.ru", password);
+        assertEquals(loginPage.getNotRelevantDateError(), "Authentication failed.");
+    }
+
+    @Test(description = "Positive register with correct user data")
+    public void correctUnregisteredEmail() {
+        loginSteps.register(user1);
+        assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
+    }
+
+    @Test(description = "Register with empty field")
+    public void emptyEmail() {
+        loginSteps.register("");
+        assertEquals(loginPage.getWrongNameError(), "Invalid email address.");
+    }
+
+    @Test(description = "Register with email with account")
+    public void RegisteredEmail() {
+        loginSteps.register(user);
+        assertEquals(loginPage.getRegisteredEmailError(), "");
+    }
 }
