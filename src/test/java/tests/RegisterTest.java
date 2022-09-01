@@ -48,12 +48,29 @@ public class RegisterTest extends BaseTest {
         assertEquals(registerPage.getFirstNameError(), "firstname is required.");
     }
 
-    @Test(description = "empty Last name field")
+    @Test(description = "empty Email field")
     public void emptyEmail() {
         loginSteps.register(user1);
         assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
         registerPage.registerData(firstName, lastName, "", password);
         registerPage.registerCheckBoxes();
         assertEquals(registerPage.getFirstNameError(), "firstname is required.");
+    }
+
+    @Test(description = "empty Password field")
+    public void emptyPassword() {
+        loginSteps.register(user1);
+        assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
+        registerPage.registerData(firstName, lastName, email, "");
+        assertTrue(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
+    }
+
+    @Test(description = "If user try create account with e-mail already registered")
+    public void registeredEmailData() {
+        loginSteps.register(user1);
+        assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
+        registerPage.registerData(firstName, lastName, user, password);
+        registerPage.registerCheckBoxes();
+        assertEquals(registerPage.getRegisterEmailError(), "An account using this email address has already been registered.");
     }
 }

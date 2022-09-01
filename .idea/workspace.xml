@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="первый тест на регистрацию">
+    <list default="true" id="1f276b54-e470-459f-a048-c1d80b1fed7f" name="Changes" comment="добавлены тесты на регистрацию, примечания к переменным">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +53,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegisterTest.emptyFirstName">
-    <configuration name="LoginTest.correctUnregisteredEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LoginTest.RegisteredEmail">
+    <configuration name="LoginTest.RegisteredEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Diploma_Gotalskaia" />
       <extension name="coverage">
         <pattern>
@@ -66,25 +64,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="correctUnregisteredEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.emptyUserName" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Diploma_Gotalskaia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="emptyUserName" />
+      <option name="METHOD_NAME" value="RegisteredEmail" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -146,13 +126,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegisterTest.registeredEmailData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Diploma_Gotalskaia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegisterTest" />
+      <option name="METHOD_NAME" value="registeredEmailData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.RegisteredEmail" />
+        <item itemvalue="TestNG.RegisterTest.registeredEmailData" />
         <item itemvalue="TestNG.RegisterTest.emptyFirstName" />
         <item itemvalue="TestNG.RegisterTest.allRequiredField" />
         <item itemvalue="TestNG.RegisterTest.correctUnregisteredData" />
-        <item itemvalue="TestNG.LoginTest.correctUnregisteredEmail" />
-        <item itemvalue="TestNG.LoginTest.emptyUserName" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662028966184</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="добавлены тесты на регистрацию, примечания к переменным">
+      <created>1662037725623</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1662037725623</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,7 +324,8 @@
     <MESSAGE value="описана страница регистрации почти полностью, еще требуются дополнения" />
     <MESSAGE value="дополнена страница регистрации" />
     <MESSAGE value="первый тест на регистрацию" />
-    <option name="LAST_COMMIT_MESSAGE" value="первый тест на регистрацию" />
+    <MESSAGE value="добавлены тесты на регистрацию, примечания к переменным" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлены тесты на регистрацию, примечания к переменным" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
