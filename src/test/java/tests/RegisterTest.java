@@ -2,7 +2,7 @@ package tests;
 
 import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
-import pages.MainPage;
+import pages.MyAccountPage;
 import pages.RegisterPage;
 
 
@@ -15,9 +15,9 @@ public class RegisterTest extends BaseTest {
 
     @Test(description = "Positive register with correct user data")
     public void correctUnregisteredData() {
-        loginSteps.register(user1);
+        loginSteps.register(email);
         assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
-
+        registerPage.registerData(firstName, lastName, "", password);
+        assertTrue(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
     }
-
 }

@@ -11,7 +11,9 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 import pages.LoginPage;
+import pages.RegisterPage;
 import steps.LoginSteps;
+import steps.RegisterSteps;
 import utils.PropertyReader;
 
 import java.time.Duration;
@@ -24,10 +26,19 @@ public class BaseTest {
     WebDriver driver;
     LoginPage loginPage;
     LoginSteps loginSteps;
+
+    RegisterPage registerPage;
+    RegisterSteps registerSteps;
+
     String user;
     String password;
     String user1;
     String password1;
+
+    String firstName;
+    String lastName;
+    String email;
+    String newPassword;
 
 
     @Parameters({"browser"})
@@ -67,8 +78,14 @@ public class BaseTest {
         user1 = System.getProperty("user1", PropertyReader.getProperty("user1"));
         password1 = System.getProperty("password1", PropertyReader.getProperty("password1"));
 
+        firstName = System.getProperty("firstName", PropertyReader.getProperty("firstName"));
+        lastName = System.getProperty("lastName", PropertyReader.getProperty("lastName"));
+        email = System.getProperty("email", PropertyReader.getProperty("email"));
+        newPassword = System.getProperty("newPassword", PropertyReader.getProperty("newPassword"));
+
         loginPage = new LoginPage(driver);
         loginSteps = new LoginSteps(driver);
+        registerPage = new RegisterPage(driver);
     }
 
     @AfterMethod(alwaysRun = true)

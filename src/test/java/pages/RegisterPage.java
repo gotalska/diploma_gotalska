@@ -37,11 +37,16 @@ public class RegisterPage extends LoginPage {
     }
 
     @Step("Register with correct data")
-    public RegisterPage registerData(String user, String password) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(USER_NAME));
-        driver.findElement(USER_NAME).sendKeys(user);
-        driver.findElement(PASSWORD).sendKeys(password);
-        driver.findElement(LOGIN_BUTTON).click();
+    public RegisterPage registerData(String firstName, String lastName, String email, String newPassword) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(CREATE_ACCOUNT));
+        driver.findElement(MALE_GENDER).click();
+        driver.findElement(FIRST_NAME).sendKeys(firstName);
+        driver.findElement(LAST_NAME).sendKeys(lastName);
+        driver.findElement(EMAIL).sendKeys(email);
+        driver.findElement(PASSWORD).sendKeys(newPassword);
+        driver.findElement(NEWS).click();
+        driver.findElement(SPECIAL_OPTIONS).click();
+        driver.findElement(CREATE_ACCOUNT).click();
         return this;
 
     }
