@@ -29,14 +29,14 @@ public class BaseTest {
 
     RegisterPage registerPage;
 
-    String user; //основная почта для теста логина
+    String user;
     String password;
-    String user1; //не регистрировать на эту почту никаких аккаунтов - для проверки негативных кейсов регистрации
+    String user1;
     String password1;
 
     String firstName;
     String lastName;
-    String email; //для позитивного теста на регистрацию
+    String email;
     String newPassword;
 
 
