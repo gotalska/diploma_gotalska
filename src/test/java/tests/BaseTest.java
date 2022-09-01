@@ -28,16 +28,15 @@ public class BaseTest {
     LoginSteps loginSteps;
 
     RegisterPage registerPage;
-    RegisterSteps registerSteps;
 
-    String user;
+    String user; //основная почта для теста логина
     String password;
-    String user1;
+    String user1; //не регистрировать на эту почту никаких аккаунтов - для проверки негативных кейсов регистрации
     String password1;
 
     String firstName;
     String lastName;
-    String email;
+    String email; //для позитивного теста на регистрацию
     String newPassword;
 
 
