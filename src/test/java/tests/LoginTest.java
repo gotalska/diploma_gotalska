@@ -16,7 +16,7 @@ public class LoginTest extends BaseTest {
     @Test(description = "Positive login with correct user data")
     public void correctUserShouldBeLoggedIn() {
         loginSteps.login(user, password);
-        assertTrue(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
+        assertTrue(new MyAccountPage(driver).isPageOpened(), "page isn't open");
     }
 
     @Test(description = "Empty password")
@@ -31,13 +31,13 @@ public class LoginTest extends BaseTest {
         assertEquals(loginPage.getNameError(), "An email address required.");
     }
 
-    @Test(description = "random userName and password")
+    @Test(description = "random symbols in fields userName and password")
     public void randomUserNameAndPassword() {
         Random random = new Random();
         String name = random.toString();
         String password = random.toString();
         loginSteps.login(name, password);
-        assertFalse(new MyAccountPage(driver).isPageOpened(), "smth went wrong");
+        assertFalse(new MyAccountPage(driver).isPageOpened(), "page isn't open");
     }
 
     @Test(description = "Wrong password")
@@ -54,17 +54,17 @@ public class LoginTest extends BaseTest {
 
     @Test(description = "E-mail without account")
     public void emailWithoutAccount() {
-        loginSteps.login("tiamat136@yandex.ru", password);
+        loginSteps.login(user1, password);
         assertEquals(loginPage.getNotRelevantDateError(), "Authentication failed.");
     }
 
     @Test(description = "Positive register with correct user data")
     public void correctUnregisteredEmail() {
         loginSteps.register(user1);
-        assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
+        assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "page isn't open");
     }
 
-    @Test(description = "Register with empty field")
+    @Test(description = "Register with empty field email")
     public void emptyEmail() {
         loginSteps.register("");
         assertEquals(loginPage.getWrongNameError(), "Invalid email address.");
