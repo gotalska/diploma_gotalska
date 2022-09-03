@@ -22,9 +22,9 @@ public class RegisterPage extends LoginPage {
     public static final By MONTH = By.id("uniform-months");
     public static final By YEAR = By.id("cuselFrame-years");
     public static final By FIRSTNAME_ERROR = By.xpath("//*[@id=\"center_column\"]/div/ol/li[1]");
-    public static final By LASTNAME_ERROR = By.xpath("\"//li[text()='lastname is required.\n']\"");
-    public static final By EMAIL_ERROR = By.xpath("\"//li[text()='email is required.\n']\"");
-    public static final By REGISTERED_EMAIL_ERROR = By.xpath("\"//li[text()='An account using this email address has already been registered.']\"");
+    public static final By LASTNAME_ERROR = By.xpath("//*[@id=\"center_column\"]/div/ol/li[1]");
+    public static final By EMAIL_ERROR = By.xpath("//*[@id=\"center_column\"]/div/ol/li[1]");
+    public static final By REGISTERED_EMAIL_ERROR = By.xpath("//*[@id=\"center_column\"]/div/ol/li[1]");
 
 
     public RegisterPage(WebDriver driver) {
