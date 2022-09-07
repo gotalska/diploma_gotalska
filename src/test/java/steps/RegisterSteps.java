@@ -22,7 +22,7 @@ public class RegisterSteps {
     @Step("open register page")
     public void register(String user1) {
         loginPage.openPage();
-        assertTrue(loginPage.isPageOpened(), "Smth went wrong");
+        assertTrue(loginPage.isPageOpened(), "page isn't open");
         loginPage.register(user1);
     }
 }

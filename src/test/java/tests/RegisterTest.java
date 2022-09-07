@@ -6,8 +6,6 @@ import pages.MyAccountPage;
 import pages.RegisterPage;
 
 
-import java.util.Random;
-
 import static org.testng.Assert.*;
 
 @Log4j2
@@ -15,11 +13,14 @@ public class RegisterTest extends BaseTest {
 
     @Test(description = "Positive register with correct user data")
     public void allCorrectUnregisteredData() {
-        loginSteps.register(email);
+        loginSteps.register(user);
         assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "page isn't open");
-        registerPage.registerData(firstName, lastName, email, password);
-        registerPage.registerCheckBoxes();
+        registerPage.registerData(firstName, lastName, user, password);
         assertTrue(new MyAccountPage(driver).isPageOpened(), "page isn't open");
+        myAccountPage.openPersonalInfo();
+        personalInfoPage.requestFirstName(firstName);
+        personalInfoPage.requestLastName(lastName);
+        personalInfoPage.requestEmail(user);
     }
 
     @Test(description = "Register with only required field: firstname, lastname, email")
@@ -69,8 +70,8 @@ public class RegisterTest extends BaseTest {
     @Test(description = "If user try create account with e-mail already registered")
     public void registeredEmailData() {
         loginSteps.register(user1);
-        assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "smth went wrong");
-        registerPage.registerData(firstName, lastName, user, password);
+        assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "page isn't open");
+        registerPage.registerData(firstName, lastName, "gotalska@tut.by", password);
         registerPage.registerCheckBoxes();
         assertEquals(registerPage.getRegisterEmailError(), "An account using this email address has already been registered.");
     }

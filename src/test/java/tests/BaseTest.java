@@ -11,6 +11,8 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.*;
 import pages.LoginPage;
+import pages.MyAccountPage;
+import pages.PersonalInfoPage;
 import pages.RegisterPage;
 import steps.LoginSteps;
 import steps.RegisterSteps;
@@ -28,6 +30,10 @@ public class BaseTest {
     LoginSteps loginSteps;
 
     RegisterPage registerPage;
+
+    MyAccountPage myAccountPage;
+
+    PersonalInfoPage personalInfoPage;
 
     String user;
     String password;
@@ -85,6 +91,8 @@ public class BaseTest {
         loginPage = new LoginPage(driver);
         loginSteps = new LoginSteps(driver);
         registerPage = new RegisterPage(driver);
+        myAccountPage = new MyAccountPage(driver);
+        personalInfoPage = new PersonalInfoPage(driver);
     }
 
     @AfterMethod(alwaysRun = true)

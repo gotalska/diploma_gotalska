@@ -25,6 +25,9 @@ public abstract class MainPage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    public MainPage() {
+            }
+
     public abstract boolean isPageOpened();
 
     boolean waitForElement(By locator) {
@@ -38,4 +41,8 @@ public abstract class MainPage {
     }
 
     public abstract boolean isRegisterPageOpened();
+
+    public boolean requestFirstName(String test) {
+        return false;
+    }
 }
