@@ -51,10 +51,10 @@ public class RegisterPage extends LoginPage {
 
     @Step("checkboxes")
     public RegisterPage registerCheckBoxes() {
-    driver.findElement(MALE_GENDER).click();
-    driver.findElement(NEWS).click();
-    driver.findElement(SPECIAL_OPTIONS).click();
-    return this;
+        driver.findElement(MALE_GENDER).click();
+        driver.findElement(NEWS).click();
+        driver.findElement(SPECIAL_OPTIONS).click();
+        return this;
     }
 
     public String getFirstNameError() {
