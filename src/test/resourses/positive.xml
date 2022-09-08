@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Positive tests">
+    <listeners>
+        <listener class-name="utils.RetryAnalyzer"></listener>
+    </listeners>
     <test name="Register and login test">
         <classes>
             <class name="tests.RegisterTest">

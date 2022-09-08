@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Negative tests" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="tests.AnnotationTransformer"></listener>
+    </listeners>
     <test name="Register and login test">
         <classes>
             <class name="tests.RegisterTest">

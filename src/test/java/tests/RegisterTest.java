@@ -4,6 +4,7 @@ import lombok.extern.log4j.Log4j2;
 import org.testng.annotations.Test;
 import pages.MyAccountPage;
 import pages.RegisterPage;
+import utils.RetryAnalyzer;
 
 
 import static org.testng.Assert.*;
