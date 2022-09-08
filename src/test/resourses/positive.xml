@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Positive tests">
+    <test name="Register and login test">
+        <classes>
+            <class name="tests.RegisterTest">
+                <methods>
+                    <include name="allCorrectUnregisteredData"/>
+                    <include name="allRequiredField"/>
+                </methods>
+            </class>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="correctUserShouldBeLoggedIn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

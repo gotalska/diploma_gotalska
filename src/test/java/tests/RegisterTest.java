@@ -71,7 +71,7 @@ public class RegisterTest extends BaseTest {
     public void registeredEmailData() {
         loginSteps.register(user1);
         assertTrue(new RegisterPage(driver).isRegisterPageOpened(), "page isn't open");
-        registerPage.registerData(firstName, lastName, "gotalska@tut.by", password);
+        registerPage.registerData(firstName, lastName, user, password);
         registerPage.registerCheckBoxes();
         assertEquals(registerPage.getRegisterEmailError(), "An account using this email address has already been registered.");
     }
